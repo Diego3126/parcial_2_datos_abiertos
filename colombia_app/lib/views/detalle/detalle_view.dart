@@ -145,7 +145,7 @@ class _DetalleViewState extends State<DetalleView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(_item?.name ?? 'Detalle')),
+      appBar: AppBar(title: Text(_item != null ? (_item.name ?? 'Detalle') : 'Detalle')),
       body: EstadoWidget(
         cargando: _cargando,
         error: _error,
