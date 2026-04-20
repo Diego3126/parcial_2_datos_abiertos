@@ -1,4 +1,4 @@
-# 🇨🇴 Colombia App
+# Colombia App
 
 Aplicación móvil desarrollada en **Flutter** como proyecto de la asignatura **Electiva Profesional I** en la Unidad Central del Valle del Cauca (UCEVA). Consume datos abiertos de Colombia a través de la API pública **API Colombia**, mostrando información sobre departamentos, presidentes, atracciones turísticas y platos típicos del país.
 
