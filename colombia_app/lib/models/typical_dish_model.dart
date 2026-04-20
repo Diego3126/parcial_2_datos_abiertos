@@ -1,5 +1,5 @@
 class TypicalDish {
-  final int    id;
+  final int id;
   final String name;
   final String description;
   final String image;
@@ -15,11 +15,13 @@ class TypicalDish {
 
   factory TypicalDish.fromJson(Map<String, dynamic> json) {
     return TypicalDish(
-      id:          json['id']          ?? 0,
-      name:        json['name']        ?? '',
+      id: json['id'] ?? 0,
+      name: json['name'] ?? '',
       description: json['description'] ?? '',
-      image:       json['image']       ?? '',
-      region:      json['region']?['name'] ?? '',
+      image: json['image'] ?? '',
+      region: json['region'] != null
+          ? (json['region']['name'] ?? 'Sin región')
+          : 'Sin región',
     );
   }
 }
